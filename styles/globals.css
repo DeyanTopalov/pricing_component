@@ -22,9 +22,27 @@
     --gray-blue-600: 233, 13%, 49%;
     --gray-blue-800: 232, 13%, 33%;
 
-    --gradient-start: 236, 72%, 79%;
-    --gradient-end: 237, 63%, 64%;
-
-
   }
+}
+
+.test {
+  color: hsl(234, 13%, 49%);
+  /* #6d708d */
+  color: hsl(0, 0%, 59%);
+  /* #979797 */
+  color: hsl(234, 13%, 49%);
+  /* #6d708d */
+  color: hsl(234, 13%, 49%);
+  /* #6d708d */
+
+
+
+}
+
+.start {
+  color: #a3a8f0;
+}
+
+.end {
+  color: #696fdd;
 }
