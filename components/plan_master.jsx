@@ -7,28 +7,28 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const PlanBasic = () => {
+const PlanMaster = () => {
   return (
     <Card className=" grid max-w-[18.75rem] place-content-center rounded-xl bg-white  md:max-w-full">
       <CardHeader>
         <CardTitle className="text-clr-gray-blue-600  mb-4 text-lg font-bold">
-          Basic
+          Master
         </CardTitle>
         <CardDescription className="text-clr-gray-blue-800 mb-10 flex items-center text-[2.5rem] font-bold">
-          $<span className=" text-7xl font-bold">19.99</span>
+          $<span className=" text-7xl font-bold">39.99</span>
         </CardDescription>
       </CardHeader>
 
       <CardContent className="w-full">
         <ul className="text-clr-gray-blue-600  font-bold">
           <li className="border-clr-gray-blue-200 border-t-2 py-3">
-            500 GB Storage
+            2 TB Storage
           </li>
           <li className="border-clr-gray-blue-200 border-y-2 py-3">
-            2 Users Allowed
+            10 Users Allowed
           </li>
           <li className="border-clr-gray-blue-200 border-b-2 py-3">
-            Send up to 3 GB
+            Send up to 20 GB
           </li>
         </ul>
       </CardContent>
@@ -46,4 +46,4 @@ const PlanBasic = () => {
   );
 };
 
-export default PlanBasic;
+export default PlanMaster;
