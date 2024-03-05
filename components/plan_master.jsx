@@ -7,15 +7,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const PlanMaster = () => {
+const PlanMaster = ({ checked, monthly, annually }) => {
   return (
     <Card className=" grid max-w-[18.75rem] place-content-center rounded-xl bg-white  md:max-w-full">
-      <CardHeader>
+      <CardHeader className="w-[16.5rem]">
         <CardTitle className="text-clr-gray-blue-600  mb-4 text-lg font-bold">
           Master
         </CardTitle>
-        <CardDescription className="text-clr-gray-blue-800 mb-10 flex items-center text-[2.5rem] font-bold">
-          $<span className=" text-7xl font-bold">39.99</span>
+        <CardDescription className="text-clr-gray-blue-800 mb-10 flex items-center justify-center text-[2.5rem] font-bold">
+          $
+          <span className=" text-6xl font-bold">
+            {checked ? monthly : annually}
+          </span>
         </CardDescription>
       </CardHeader>
 

@@ -7,15 +7,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const PlanProfessional = () => {
+const PlanProfessional = ({ checked, monthly, annually }) => {
   return (
     <Card className=" from-start-clr to-end-clr grid max-w-[18.75rem] place-content-center rounded-xl bg-gradient-to-br  md:max-w-full">
-      <CardHeader>
+      <CardHeader className="w-[16.5rem]">
         <CardTitle className="mb-4  text-lg font-bold text-white">
           Professional
         </CardTitle>
-        <CardDescription className="mb-10 flex items-center text-[2.5rem] font-bold text-white">
-          $<span className=" text-7xl font-bold">24.99</span>
+        <CardDescription className="mb-10 flex items-center justify-center text-[2.5rem] font-bold text-white">
+          $
+          <span className=" text-6xl font-bold">
+            {checked ? monthly : annually}
+          </span>
         </CardDescription>
       </CardHeader>
 
